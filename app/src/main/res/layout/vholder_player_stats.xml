@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/layout_player_stats"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="8dp"
+    >
+
+    <TextView
+        android:id="@+id/text_player_name_and_team_abbrev"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:textSize="22sp"
+        tools:text="@string/hint_stephen_curry_gsw"
+        />
+
+    <TextView
+        android:id="@+id/text_points_assists_rebounds"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/text_player_name_and_team_abbrev"
+        android:layout_alignParentStart="true"
+        android:textSize="18sp"
+        tools:text="@string/hint_stephen_curry_stats"
+        />
+
+    <TextView
+        android:id="@+id/text_nerd_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:textSize="20sp"
+        android:text="@string/text_nerd"
+        />
+
+    <TextView
+        android:id="@+id/text_nerd_value"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/text_nerd_label"
+        android:layout_alignParentEnd="true"
+        android:textSize="18sp"
+        tools:text="@string/hint_stephen_curry_nerd"
+        />
+
+</RelativeLayout>

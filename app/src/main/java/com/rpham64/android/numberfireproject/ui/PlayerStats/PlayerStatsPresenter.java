@@ -4,6 +4,7 @@ import android.content.Context;
 
 import com.rpham64.android.numberfireproject.models.Player;
 import com.rpham64.android.numberfireproject.models.PlayerStat;
+import com.rpham64.android.numberfireproject.models.Team;
 import com.rpham64.android.numberfireproject.network.BasketballDataResponse;
 import com.rpham64.android.numberfireproject.utils.BasePresenter;
 import com.rpham64.android.numberfireproject.utils.JsonUtils;
@@ -25,15 +26,11 @@ public class PlayerStatsPresenter extends BasePresenter<PlayerStatsPresenter.Vie
     }
 
     public void fetch() {
-
         BasketballDataResponse response = JsonUtils.getBasketballDataResponse(mContext);
-
-        getView().getPlayers(response.players);
-        getView().getPlayerStats(response.playerStats);
+        getView().getStatsInfo(response.teams, response.players, response.playerStats);
     }
 
     public interface View {
-        void getPlayers(List<Player> players);
-        void getPlayerStats(List<PlayerStat> playerStats);
+        void getStatsInfo(List<Team> teams, List<Player> players, List<PlayerStat> playerStats);
     }
 }

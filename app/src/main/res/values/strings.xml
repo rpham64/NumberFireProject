@@ -6,4 +6,8 @@
     <string name="warriors">Warriors</string>
     <string name="lakers">Lakers</string>
     <string name="text_final">FINAL</string>
+    <string name="hint_stephen_curry_gsw">Stephen Curry - GSW</string>
+    <string name="hint_stephen_curry_stats">15 Pts, 1 Ast, 2 Reb</string>
+    <string name="text_nerd">nERD</string>
+    <string name="hint_stephen_curry_nerd">13</string>
 </resources>
