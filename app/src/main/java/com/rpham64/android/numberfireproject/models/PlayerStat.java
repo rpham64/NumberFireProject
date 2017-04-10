@@ -25,9 +25,9 @@ public class PlayerStat {
 
     public final int rebounds;
 
-    public final int nerd;
+    public final float nerd;
 
-    public PlayerStat(int id, int gameId, int playerId, int teamId, int points, int assists, int rebounds, int nerd) {
+    public PlayerStat(int id, int gameId, int playerId, int teamId, int points, int assists, int rebounds, float nerd) {
         this.id = id;
         this.gameId = gameId;
         this.playerId = playerId;

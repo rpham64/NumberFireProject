@@ -8,10 +8,8 @@ import com.google.gson.annotations.SerializedName;
 
 public class GameState {
 
-    enum Status {
-        IN_PROGRESS,
-        FINAL
-    }
+    public static final String STATUS_IN_PROGRESS = "IN_PROGRESS";
+    public static final String STATUS_FINAL = "FINAL";
 
     public final int id;
 

@@ -1,3 +1,9 @@
 <resources>
     <string name="app_name">NumberFireProject</string>
+    <string name="away_team_info">Away Team Info</string>
+    <string name="home_team_info">Home Team Info</string>
+    <string name="game_state_info">Game State Info</string>
+    <string name="warriors">Warriors</string>
+    <string name="lakers">Lakers</string>
+    <string name="text_final">FINAL</string>
 </resources>

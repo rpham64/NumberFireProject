@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:orientation="horizontal"
+              android:weightSum="3"
+              android:baselineAligned="false"
+    >
+
+    <RelativeLayout
+        android:id="@+id/layout_away_team_info"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:padding="8dp"
+        >
+
+        <TextView
+            android:id="@+id/text_away_team_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:text="@string/warriors"
+            style="@style/TeamName"
+            />
+
+        <TextView
+            android:id="@+id/text_away_team_score"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/text_away_team_name"
+            tools:text="102"
+            style="@style/TeamScore"
+            />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/layout_game_state_info"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:background="@android:color/holo_green_light"
+        >
+
+        <TextView
+            android:id="@+id/text_final"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="@string/text_final"
+            style="@style/TextGameStateFinal"
+            android:visibility="gone"
+            />
+
+        <TextView
+            android:id="@+id/text_quarter_and_time_left"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:textSize="22sp"
+            tools:text="Q4 10:20"
+            />
+
+        <TextView
+            android:id="@+id/text_broadcast_provider"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/text_quarter_and_time_left"
+            android:layout_marginTop="6dp"
+            android:layout_centerInParent="true"
+            tools:text="ROOT"
+            />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/layout_home_team_info"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:padding="8dp"
+        >
+
+        <TextView
+            android:id="@+id/text_home_team_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:text="@string/lakers"
+            style="@style/TeamName"
+            />
+
+        <TextView
+            android:id="@+id/text_home_team_score"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/text_home_team_name"
+            tools:text="105"
+            style="@style/TeamScore"
+            />
+
+    </RelativeLayout>
+
+</LinearLayout>
