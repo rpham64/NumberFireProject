@@ -48,25 +48,23 @@ public class PlayerStatsAdapter extends RecyclerView.Adapter<PlayerStatsAdapter.
         // Player Stats => Get player_id, team_id, points, assists, rebounds, nerd
         PlayerStat stats = mPlayerStats.get(position);
 
-        // Player => Use player_id to get name
-        int playerId = stats.playerId;
-        String name = getPlayerName(playerId);
+        // Player => Use player_id to get name and team_id
+        Player player = getPlayer(stats.playerId);
+        String name = player.name;
 
         // Team => Use team_id to get abbrev
-        int teamId = stats.teamId;
+        int teamId = player.teamId;
         String teamAbbrev = getTeamAbbreviation(teamId);
 
         holder.bindViewHolder(name, teamAbbrev, stats);
     }
 
-    private String getPlayerName(int playerId) {
-
+    private Player getPlayer(int playerId) {
         for (Player player : mPlayers) {
             if (player.id == playerId) {
-                return player.name;
+                return player;
             }
         }
-
         return null;
     }
 
