@@ -54,7 +54,7 @@ public class GamesStateAdapter extends RecyclerView.Adapter<GamesStateAdapter.Ga
     public void onBindViewHolder(GamesStateViewHolder holder, int position) {
 
         // Game State => Get "game_id"
-        GameState currentState = mStates.get(position);
+        GameState currentState = mStates.get(mStates.size() - position - 1);
         int gameId = currentState.gameId;
 
         // Games => Get "home_team_id" and "away_team_id"
